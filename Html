@@ -1,63 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site para mais Batman</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiper Saúde Bauru e Região</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Meu Site Aleatório Sobre o</h1>
-        <p>Batman</p>
-    </header>
+  <header>
+    <h1>Hiper Saúde Bauru e Região</h1>
+    <p>Apoie o Hospital Amaral Carvalho!</p>
+  </header>
 
-    <div class="menu">
-        <a href="#">I</a>
-        <a href="#">AM</a>
-        <a href="#">BATMAN</a>
+  <nav>
+    <a href="#" onclick="showCadastro()">Cadastro</a>
+    <a href="#" onclick="showContato()">Contatos</a>
+    <a href="login.html">Área do Colaborador</a>
+  </nav>
+
+  <main>
+    <div class="banner">
+      <img src="https://images.unsplash.com/photo-1519494026892-80bbdcdc6a0e" 
+           srcset="https://images.unsplash.com/photo-1519494026892-80bbdcdc6a0e?w=480 480w, https://images.unsplash.com/photo-1519494026892-80bbdcdc6a0e?w=1024 1024w"
+           sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px"
+           alt="Banner Hiper Saúde - Hospital">
+    </div>
+    <div class="container">
+      <div class="item">
+        <h2>Hiper Saúde</h2>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" 
+             srcset="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=480 480w, https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1024 1024w"
+             sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px"
+             alt="Imagem Hiper Saúde">
+        <p>Participe e apoie uma causa nobre!</p>
+      </div>
+      <div class="item">
+        <h2>Hospital Amaral Carvalho</h2>
+        <img src="https://images.unsplash.com/photo-1538108149393-fbbd82d57f4d" 
+             srcset="https://images.unsplash.com/photo-1538108149393-fbbd82d57f4d?w=480 480w, https://images.unsplash.com/photo-1538108149393-fbbd82d57f4d?w=1024 1024w"
+             sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px, 1600px"
+             alt="Imagem Hospital Amaral Carvalho">
+        <p>Contribua com o hospital!</p>
+        <a href="https://www.amaralcarvalho.org.br/" target="_blank">Saiba mais</a>
+      </div>
     </div>
 
-    <main>
-        <section class="normal-image-section">
-            <h2>Batman de Cada Época</h2>
-            <p>Uma breve descrição sobre as versões do Batman.</p>
-            <img srcset="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a6308c-79ee-4a8b-b8a8-1cc87689d762/dgb2jxz-5522a415-43c9-4cc8-b9eb-c24d70965803.png/v1/fill/w_400,h_210,q_80,strp/every_single_batman_ever_by_minesonic06_dgb2jxz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDIwIiwicGF0aCI6IlwvZlwvZjlhNjMwOGMtNzllZS00YThiLWI4YTgtMWNjODc2ODlkNzYyXC9kZ2Iyanh6LTU1MjJhNDE1LTQzYzktNGNjOC1iOWViLWMyNGQ3MDk2NTgwMy5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.FPr7xr4kSreTo0Ii8ZaC-lQRsjanAviBq9aSgY-Ro8Y 400w,
-                         https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a6308c-79ee-4a8b-b8a8-1cc87689d762/dgb2jxz-5522a415-43c9-4cc8-b9eb-c24d70965803.png/v1/fill/w_800,h_420,q_80,strp/every_single_batman_ever_by_minesonic06_dgb2jxz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDIwIiwicGF0aCI6IlwvZlwvZjlhNjMwOGMtNzllZS00YThiLWI4YTgtMWNjODc2ODlkNzYyXC9kZ2Iyanh6LTU1MjJhNDE1LTQzYzktNGNjOC1iOWViLWMyNGQ3MDk2NTgwMy5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.FPr7xr4kSreTo0Ii8ZaC-lQRsjanAviBq9aSgY-Ro8Y 800w"
-                 src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f9a6308c-79ee-4a8b-b8a8-1cc87689d762/dgb2jxz-5522a415-43c9-4cc8-b9eb-c24d70965803.png/v1/fill/w_800,h_420,q_80,strp/every_single_batman_ever_by_minesonic06_dgb2jxz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDIwIiwicGF0aCI6IlwvZlwvZjlhNjMwOGMtNzllZS00YThiLWI4YTgtMWNjODc2ODlkNzYyXC9kZ2Iyanh6LTU1MjJhNDE1LTQzYzktNGNjOC1iOWViLWMyNGQ3MDk2NTgwMy5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.FPr7xr4kSreTo0Ii8ZaC-lQRsjanAviBq9aSgY-Ro8Y" alt="Batman de uma época" class="responsive-img" sizes="(max-width: 768px) 100vw, 800px">
-            <img srcset="https://i.pinimg.com/236x/71/4d/26/714d262ad537499b8a7be23d497f0215.jpg 236w,
-                         https://i.pinimg.com/564x/71/4d/26/714d262ad537499b8a7be23d497f0215.jpg 564w,
-                         https://i.pinimg.com/originals/71/4d/26/714d262ad537499b8a7be23d497f0215.jpg 900w"
-                 src="https://i.pinimg.com/originals/71/4d/26/714d262ad537499b8a7be23d497f0215.jpg" alt="Batman Lego" class="responsive-img" sizes="(max-width: 768px) 100vw, 900px">
-        </section>
+    <div id="cadastroPopup" class="popup">
+      <div class="popup-content">
+        <h2>Cadastro</h2>
+        <form id="cadastroForm">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" required>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" required>
+          <button type="submit">Cadastrar</button>
+          <button type="button" onclick="hideCadastro()">Fechar</button>
+        </form>
+      </div>
+    </div>
 
-        <section class="responsive-image-section">
-            <h2>INIMIGOS</h2>
-            <p>Os maiores vilões do Batman.</p>
-            <img srcset="https://th.bing.com/th/id/R.8a152c737536cf990ceab3b8c6bfc6f9?rik=Gsvl5pxXCeVqgQ&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f95%2f36%2fdgTXM3.jpg&ehk=3G5GpiRNXZ5YPABZewvCR%2fuD9OodQjp852qdu4tq0jE%3d&risl=&pid=ImgRaw&r=0&w=512&h=256 512w,
-                         https://th.bing.com/th/id/R.8a152c737536cf990ceab3b8c6bfc6f9?rik=Gsvl5pxXCeVqgQ&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f95%2f36%2fdgTXM3.jpg&ehk=3G5GpiRNXZ5YPABZewvCR%2fuD9OodQjp852qdu4tq0jE%3d&risl=&pid=ImgRaw&r=0 1024w"
-                 src="https://th.bing.com/th/id/R.8a152c737536cf990ceab3b8c6bfc6f9?rik=Gsvl5pxXCeVqgQ&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f95%2f36%2fdgTXM3.jpg&ehk=3G5GpiRNXZ5YPABZewvCR%2fuD9OodQjp852qdu4tq0jE%3d&risl=&pid=ImgRaw&r=0" alt="Inimigos do Batman" class="responsive-img" sizes="(max-width: 768px) 100vw, 1024px">
-        </section>
+    <div id="contatoPopup" class="popup">
+      <div class="popup-content">
+        <h2>Contatos</h2>
+        <p>Suporte: (14) 99999-9999</p>
+        <button onclick="hideContato()">Fechar</button>
+      </div>
+    </div>
+  </main>
 
-        <section class="aliado-img-section">
-            <h2>BATFAMILIA</h2>
-            <p>Os parceiros do Batman na luta contra o crime.</p>
-            <img srcset="https://pm1.aminoapps.com/6337/629423b3b2a452c26dbe58410d43c2bd9d2c4dfe_128.jpg 128w,
-                         https://pm1.aminoapps.com/6337/629423b3b2a452c26dbe58410d43c2bd9d2c4dfe_hq.jpg 720w"
-                 src="https://pm1.aminoapps.com/6337/629423b3b2a452c26dbe58410d43c2bd9d2c4dfe_hq.jpg" alt="Aliados do Batman" class="responsive-img" sizes="(max-width: 768px) 100vw, 720px">
-        </section>
+  <footer>
+    <p>© 2025 - Hiper Saúde Bauru e Região</p>
+  </footer>
 
-        <section class="content-section">
-            <h2>Outras Informações</h2>
-            <p>Para mais, clique nos botões abaixo:</p>
-            <div class="content-box">História origem</div>
-            <div class="content-box">Voltar ←</div>
-            <div class="content-box">Avançar →</div>
-        </section>
-    </main>
+  <script>
+    function showCadastro() { document.getElementById("cadastroPopup").style.display = "flex"; }
+    function hideCadastro() { document.getElementById("cadastroPopup").style.display = "none"; }
+    function showContato() { document.getElementById("contatoPopup").style.display = "flex"; }
+    function hideContato() { document.getElementById("contatoPopup").style.display = "none"; }
 
-    <footer>
-        <p>Feito por Guilherme Massaru Lopes Matsumoto</p>
-    </footer>
+    let users = JSON.parse(localStorage.getItem('users')) || [];
+    document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const user = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        cpf: document.getElementById('cpf').value,
+        password: document.getElementById('password').value
+      };
+      if (users.some(u => u.email === user.email || u.cpf === user.cpf)) {
+        alert('Email ou CPF já cadastrado!');
+        return;
+      }
+      users.push(user);
+      localStorage.setItem('users', JSON.stringify(users));
+      alert('Cadastro realizado!');
+      hideCadastro();
+    });
+  </script>
 </body>
 </html>
