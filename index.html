@@ -16,6 +16,7 @@
     <a href="#" onclick="showCadastro()">Cadastro</a>
     <a href="#" onclick="showContato()">Contatos</a>
     <a href="login.html">Área do Colaborador</a>
+    
   </nav>
 
   <main>
@@ -43,6 +44,12 @@
         <p>Contribua com o hospital!</p>
         <a href="https://www.amaralcarvalho.org.br/" target="_blank">Saiba mais</a>
       </div>
+    </div>
+
+    <div class="container">
+      <h2>informações</h2>
+      <button onclick="carregarDados()">Carregar Dados</button>
+      <p id="resultado"></p>
     </div>
 
     <div id="cadastroPopup" class="popup">
@@ -82,9 +89,39 @@
     function showContato() { document.getElementById("contatoPopup").style.display = "flex"; }
     function hideContato() { document.getElementById("contatoPopup").style.display = "none"; }
 
-    let users = JSON.parse(localStorage.getItem('users')) || [];
-    document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+    function carregarDados() {
+      const jsonData = '{"nome": "guilherme", "idade": 19}';
+      const objeto = JSON.parse(jsonData);
+      document.getElementById("resultado").innerText = `Nome: ${objeto.nome}, Idade: ${objeto.idade}`;
+    }
+
+    async function fetchUsers() {
+      try {
+        const response = await fetch('data/users.json');
+        if (!response.ok) throw new Error('Erro ao carregar users.json');
+        return await response.json();
+      } catch (error) {
+        console.error(error);
+        alert('Erro ao acessar dados. Usando armazenamento local.');
+        return [];
+      }
+    }
+
+    async function saveUsers(users) {
+      try {
+        console.log('Salvando no users.json:', JSON.stringify(users, null, 2));
+        alert('Cadastro realizado! (Simulado - necessita de backend para salvar)');
+        return true;
+      } catch (error) {
+        console.error(error);
+        alert('Erro ao salvar dados.');
+        return false;
+      }
+    }
+
+    document.getElementById('cadastroForm').addEventListener('submit', async function(event) {
       event.preventDefault();
+      const users = await fetchUsers();
       const user = {
         nome: document.getElementById('nome').value,
         email: document.getElementById('email').value,
@@ -96,9 +133,10 @@
         return;
       }
       users.push(user);
-      localStorage.setItem('users', JSON.stringify(users));
-      alert('Cadastro realizado!');
-      hideCadastro();
+      if (await saveUsers(users)) {
+        alert('Cadastro realizado!');
+        hideCadastro();
+      }
     });
   </script>
 </body>
